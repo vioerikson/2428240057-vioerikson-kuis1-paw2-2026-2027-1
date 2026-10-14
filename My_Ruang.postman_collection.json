@@ -1,0 +1,122 @@
+{
+  "info": {
+    "_postman_id": "66aa5b38-79d2-431b-8463-1ef2311fa275",
+    "name": "My_Ruang",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "58957000",
+    "_collection_link": "https://vioerikson-2428240057-1506895.postman.co/workspace/kuis1paw~0b456ba3-3121-4eb3-9a42-6bf2a933d041/collection/58957000-66aa5b38-79d2-431b-8463-1ef2311fa275?action=share&source=collection_link&creator=58957000"
+  },
+  "item": [
+    {
+      "name": "Post_Ruangan",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nama_ruangan\": \"kelas 2\",\r\n    \"kapasitas\": 5,\r\n    \"lantai\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/ruangkelas",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "ruangkelas"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get_Ruangan",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/ruangkelas",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "ruangkelas"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get_DetaiRuangan",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:3000/api/ruangkelas/6acfb17a6ba022c295ab8c7b",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "ruangkelas", "6acfb17a6ba022c295ab8c7b"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Put_Ruangan",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nama_ruangan\": \"kelas 3\",\r\n    \"kapasitas\": 2,\r\n    \"lantai\": 1\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/ruangkelas/6acfb17a6ba022c295ab8c7b",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "ruangkelas", "6acfb17a6ba022c295ab8c7b"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete_Ruangan",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/ruangkelas/6acfb17a6ba022c295ab8c7b",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "3000",
+          "path": ["api", "ruangkelas", "6acfb17a6ba022c295ab8c7b"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
